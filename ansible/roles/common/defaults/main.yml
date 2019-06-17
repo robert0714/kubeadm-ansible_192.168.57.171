@@ -1,7 +1,13 @@
 hosts: [
-  { host_ip: "192.168.57.160", host_name: "k8s-m1"},
-  { host_ip: "192.168.57.161", host_name: "k8s-n1"},
-  { host_ip: "192.168.57.162", host_name: "k8s-n2"}  
+  { host_ip: "192.168.57.171", host_name: "k8s-m1"},
+  { host_ip: "192.168.57.172", host_name: "k8s-m2"},
+  { host_ip: "192.168.57.173", host_name: "k8s-m3"},
+  { host_ip: "192.168.57.181", host_name: "k8s-e1"},
+  { host_ip: "192.168.57.182", host_name: "k8s-e2"},
+  { host_ip: "192.168.57.183", host_name: "k8s-e3"},
+  { host_ip: "192.168.57.191", host_name: "k8s-n1"},
+  { host_ip: "192.168.57.192", host_name: "k8s-n2"}, 
+  { host_ip: "192.168.57.193", host_name: "k8s-n3"}  
 ]
 parameters: [
   { name: "vm.max_map_count", value: "262144"},

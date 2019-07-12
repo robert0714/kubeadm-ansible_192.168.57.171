@@ -15,8 +15,8 @@ Vagrant.configure(2) do |config|
       # IP address of your LAN's router 
       default_router = "192.168.57.1"       
       # change/ensure the default route via the local network's WAN router, useful for public_network/bridged mode
-      d.vm.provision :shell, inline: "ip route delete default 2>&1 >/dev/null || true; ip route add default via #{default_router}"
-     # d.vm.provision :shell, path: "scripts/bootstrap4CentOs_ansible.sh"
+      #d.vm.provision :shell, inline: "ip route delete default 2>&1 >/dev/null || true; ip route add default via #{default_router}"
+      # d.vm.provision :shell, path: "scripts/bootstrap4CentOs_ansible.sh"
       d.vm.provision :shell, path: "post-deploy.sh",run: "always"
       d.vm.provider "virtualbox" do |v|
         v.memory = 16384
